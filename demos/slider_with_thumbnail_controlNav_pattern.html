@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic flexslider with Thumbnail Control Navigation pattern</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- adding css files -->
+	<link rel="stylesheet" type="text/css" href="../css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+	<!-- adding script files -->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+</head>
+<body>
+	<!-- flexslider begins -->
+	<div class="flexslider">
+		<ul class="slides">
+			<li data-thumb="../images/banner1.jpg">
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li data-thumb="../images/banner2.jpg">
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li data-thumb="../images/banner3.jpg">
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li data-thumb="../images/banner4.jpg">
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+		</ul>
+	</div>
+	<!-- flexslider ends -->
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide", // set default animation effect
+				controlNav: "thumbnails" // making navigation controls as thumbnails
+			});
+		});
+	</script>
+</body>
+</html>

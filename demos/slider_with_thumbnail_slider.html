@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider with Carousel Slider as Navigation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- adding css files -->
+	<link rel="stylesheet" type="text/css" href="../css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+	<!-- adding script files -->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+</head>
+<body>
+	<!-- flexslider -->
+	<div id="slider" class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+			</li>
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+			</li>
+		</ul>
+	</div>
+
+	<!-- carousel navigation -->
+	<div id="carousel" class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+			</li>
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#carousel').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: 210,
+				itemMargin: 5,
+				asNavFor: '#slider' // making carousel as navigation for slider
+			});
+
+			$('#slider').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				sync: "#carousel" // sync with carousel items
+			});
+		});
+	</script>
+</body>
+</html>

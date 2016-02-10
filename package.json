@@ -1,0 +1,19 @@
+{
+  "name": "jquery-flexslider",
+  "version": "1.0.0",
+  "description": "Demos and Usage of flexslider jquery plugin",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "responsive",
+    "banner",
+    "slider"
+  ],
+  "author": "Ashwani Kumar Luhaniwal",
+  "license": "MIT",
+  "devDependencies": {
+    "jquery": "^2.2.0"
+  }
+}

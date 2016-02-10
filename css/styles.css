@@ -1,0 +1,25 @@
+/* changing default effect of flexslider class */
+.flexslider {
+	margin: 0;
+}
+
+/* For basic slider with custom navigation. */
+.flex-prev {
+	float: left;
+}
+.flex-next {
+	float: right;
+}
+
+/* For basic slider with simple caption */
+.flex-caption {
+	width: 96%;
+	padding: 30px;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.1);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+	font-size: 14px;
+	line-height: 18px;
+	position: absolute;
+}

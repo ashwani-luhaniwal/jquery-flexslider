@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic flexslider demo with caption</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- adding css files -->
+	<link rel="stylesheet" type="text/css" href="../css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+	<!-- adding script files -->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+</head>
+<body>
+	<!-- flexslider begins -->
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+				<p class="flex-caption">Geeky Banner #1</p>
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+				<p class="flex-caption">Geeky Banner #2</p>
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+				<p class="flex-caption">Geeky Banner #3</p>
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+				<p class="flex-caption">Geeky Banner #4</p>
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+				<p class="flex-caption">Geeky Banner #5</p>
+			</li>
+		</ul>
+	</div>
+	<!-- flexslider ends -->
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide" // adjust default animation effect
+			});
+		});
+	</script>
+</body>
+</html>

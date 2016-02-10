@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Basic flexslider demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Adding css files -->
+	<link rel="stylesheet" type="text/css" href="../css/flexslider.css">
+
+	<!-- Adding script files -->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+</head>
+<body>
+	<!-- flexslider begins -->
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+			</li>
+		</ul>
+	</div>
+	<!-- flexslider ends -->
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide" // adjust default animation effect
+			});
+		});
+	</script>
+</body>
+</html>

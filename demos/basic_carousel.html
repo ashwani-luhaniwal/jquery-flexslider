@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Carousel Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Adding flexslider and your own css files -->
+	<link rel="stylesheet" type="text/css" href="../css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+	<!-- Adding jquery and flexslider libraries -->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+
+</head>
+<body>
+	<!-- flexslider begins -->
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+			</li>
+			<li>
+				<img src="../images/banner1.jpg" alt="banner 1">
+			</li>
+			<li>
+				<img src="../images/banner2.jpg" alt="banner 2">
+			</li>
+			<li>
+				<img src="../images/banner3.jpg" alt="banner 3">
+			</li>
+			<li>
+				<img src="../images/banner4.jpg" alt="banner 4">
+			</li>
+			<li>
+				<img src="../images/banner5.jpg" alt="banner 5">
+			</li>
+		</ul>
+	</div>
+	<!-- flexslider ends -->
+
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider({
+				animation: "slide", // adjust animation effect
+				animationLoop: false, // stop default animation looping effect
+				itemWidth: 210, // width of each item
+				itemMargin: 5 // margin between each item
+			});
+		});
+	</script>
+</body>
+</html>
