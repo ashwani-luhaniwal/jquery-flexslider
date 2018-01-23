@@ -12,5 +12,8 @@
     "slider"
   ],
   "author": "Ashwani Kumar Luhaniwal",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jquery": "^3.3.1"
+  }
 }
